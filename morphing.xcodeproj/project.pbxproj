@@ -155,7 +155,7 @@
 		0480DD071616C4C7005D5A7F /* RunningCoco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningCoco.h; sourceTree = "<group>"; };
 		0480DD081616C4C7005D5A7F /* RunningCoco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RunningCoco.mm; sourceTree = "<group>"; };
 		0480DD0B1616CB90005D5A7F /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
-		048C030316071916009996CB /* testApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		048C030316071916009996CB /* morphing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morphing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048C030716071916009996CB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		048C030916071916009996CB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		048C030B16071916009996CB /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -453,7 +453,7 @@
 		048C030416071916009996CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				048C030316071916009996CB /* testApp.app */,
+				048C030316071916009996CB /* morphing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -825,9 +825,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		048C030216071916009996CB /* testApp */ = {
+		048C030216071916009996CB /* morphing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 048C04751607191B009996CB /* Build configuration list for PBXNativeTarget "testApp" */;
+			buildConfigurationList = 048C04751607191B009996CB /* Build configuration list for PBXNativeTarget "morphing" */;
 			buildPhases = (
 				048C02FF16071916009996CB /* Sources */,
 				048C030016071916009996CB /* Frameworks */,
@@ -837,9 +837,9 @@
 			);
 			dependencies = (
 			);
-			name = testApp;
+			name = morphing;
 			productName = testApp;
-			productReference = 048C030316071916009996CB /* testApp.app */;
+			productReference = 048C030316071916009996CB /* morphing.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -850,7 +850,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 048C02FD16071916009996CB /* Build configuration list for PBXProject "testApp" */;
+			buildConfigurationList = 048C02FD16071916009996CB /* Build configuration list for PBXProject "morphing" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -862,7 +862,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				048C030216071916009996CB /* testApp */,
+				048C030216071916009996CB /* morphing */,
 			);
 		};
 /* End PBXProject section */
@@ -1056,7 +1056,7 @@
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = testApp/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = morphing;
 				PROVISIONING_PROFILE = "3D702F02-2BE4-4924-B8D2-29351F42AD07";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3D702F02-2BE4-4924-B8D2-29351F42AD07";
 				WRAPPER_EXTENSION = app;
@@ -1075,7 +1075,7 @@
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = testApp/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = morphing;
 				PROVISIONING_PROFILE = "3D702F02-2BE4-4924-B8D2-29351F42AD07";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3D702F02-2BE4-4924-B8D2-29351F42AD07";
 				VALIDATE_PRODUCT = YES;
@@ -1086,7 +1086,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		048C02FD16071916009996CB /* Build configuration list for PBXProject "testApp" */ = {
+		048C02FD16071916009996CB /* Build configuration list for PBXProject "morphing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				048C04731607191B009996CB /* Debug */,
@@ -1095,7 +1095,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		048C04751607191B009996CB /* Build configuration list for PBXNativeTarget "testApp" */ = {
+		048C04751607191B009996CB /* Build configuration list for PBXNativeTarget "morphing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				048C04761607191B009996CB /* Debug */,
