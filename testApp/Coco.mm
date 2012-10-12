@@ -12,74 +12,101 @@
 
 @implementation Coco
 
+@synthesize body;
+@synthesize head;
+@synthesize rightFoot;
+@synthesize leftFoot;
+@synthesize rightHand;
+@synthesize leftHand;
+
 - (void) dealloc
 {
     [super dealloc];
 }
 
-- (id) init
+- (id) initWithSpeed: (float) speed
 {
     if(self = [super init])
     {
-        //swimmingCoco = [SwimmingCoco create];
-        //[self addChild: swimmingCoco z: 1 tag: 666];
+        currentCoco = [CurrentCoco createWithSpeed: 0];
+
+        swimmingCoco = [SwimmingCoco createWithSpeed: 0];
         
-        //runningCoco = [RunningCoco create];
-        //[self addChild: runningCoco z: 1 tag: 666];
+        runningCoco = [RunningCoco createWithSpeed: 0];
         
-        //currentCoco = [CurrentCoco create];
-        //[self addChild: currentCoco];
+        [self addChild: currentCoco];
+        [self addChild: swimmingCoco];
+        [self addChild: runningCoco];
         
+        runningCoco.scale = 0;
+        swimmingCoco.scale = 0;
         
-        
-        CCMenuItemFont *swim = [CCMenuItemFont itemFromString: @"Swim" target: self selector: @selector(increaseSpeed:)];
-        swim.tag = 0;
-        swim.position = ccp(100, 50);
-        
-        CCMenuItemFont *run = [CCMenuItemFont itemFromString: @"Run" target: self selector: @selector(increaseSpeed:)];
-        run.tag = 1;
-        run.position = ccp(220, 50);
-        
-        CCMenu *actionsMenu = [CCMenu menuWithItems: swim, run, nil];
-        actionsMenu.position = ccp(0,0);
-        [self addChild: actionsMenu];
     }
     
     return self;
 }
 
-- (void) increaseSpeed: (CCMenuItemFont *) sender
+- (void) doAction: (NSInteger) numberOfAction withSpeed: (float) speed
 {
-    if(sender.tag == 0)
+    if(numberOfAction == 0)
     {
-        [self removeChildByTag: 11 cleanup: YES];
+        currentAction = runningAction;
+        currentCoco.body.frames = runningCoco.body.frames;
+        currentCoco.head.frames = runningCoco.head.frames;
+        currentCoco.leftHand.frames = runningCoco.leftHand.frames;
+        currentCoco.rightHand.frames = runningCoco.rightHand.frames;
+        currentCoco.rightFoot.frames = runningCoco.rightFoot.frames;
+        currentCoco.leftFoot.frames = runningCoco.leftFoot.frames;
         
-        if(![self getChildByTag: 10])
-        {
-            swimmingCoco = [SwimmingCoco create];
-            [self addChild: swimmingCoco z: 1 tag: 10];
-        }
-        
-        [swimmingCoco increaseSpeed];
+        [currentCoco increaseSpeed];
     }
-    else if(sender.tag == 1)
+    else if(numberOfAction == 1)
     {
-        [self removeChildByTag: 10 cleanup: YES];
+        currentAction = swimmingAction;
+        currentCoco.body.frames = swimmingCoco.body.frames;
+        currentCoco.head.frames = swimmingCoco.head.frames;
+        currentCoco.leftHand.frames = swimmingCoco.leftHand.frames;
+        currentCoco.rightHand.frames = swimmingCoco.rightHand.frames;
+        currentCoco.rightFoot.frames = swimmingCoco.rightFoot.frames;
+        currentCoco.leftFoot.frames = swimmingCoco.leftFoot.frames;
         
-        if(![self getChildByTag: 11])
+        [currentCoco increaseSpeed];
+    }
+    else if(numberOfAction == 2)
+    {
+        if(currentAction != swimmingAction)
         {
-            runningCoco = [RunningCoco create];
-            [self addChild: runningCoco z: 1 tag: 11];
+            ICanJump = NO;
+            [currentCoco runAction: [CCJumpTo actionWithDuration: 0.7 position: currentCoco.position height: 150 jumps: 1]];
+            [self runAction:
+                    [CCSequence actions:
+                                [CCDelayTime actionWithDuration: 0.7],
+                                [CCCallFunc actionWithTarget: self
+                                                    selector: @selector(solveJump)],
+                     nil]
+             ];
         }
-        
-        [runningCoco increaseSpeed];
-        
     }
 }
 
-+ (Coco *) create
+- (void) solveJump
 {
-    Coco *coco = [[[Coco alloc] init] autorelease];
+    ICanJump = YES;
+}
+
+- (void) increaseSpeed
+{
+    [body increaseSpeedAnimation];
+    [head increaseSpeedAnimation];
+    [rightHand increaseSpeedAnimation];
+    [leftHand increaseSpeedAnimation];
+    [rightFoot increaseSpeedAnimation];
+    [leftFoot increaseSpeedAnimation];
+}
+
++ (Coco *) createWithSpeed: (float) speed
+{
+    Coco *coco = [[[Coco alloc] initWithSpeed: speed] autorelease];
     
     return coco;
 }

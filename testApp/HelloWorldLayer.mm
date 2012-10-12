@@ -10,7 +10,7 @@
 // Import the interfaces
 #import "HelloWorldLayer.h"
 #import "Common.h"
-
+#import "GameLayer.h"
 #import "Coco.h"
 
 
@@ -41,37 +41,19 @@
 {
 	if( (self=[super init])) {
 		
-		// create and initialize a Label
-		label = [CCLabelTTF labelWithString:@"" fontName:@"Marker Felt" fontSize:24];
-
-		// ask director the the window size
-		CGSize size = [[CCDirector sharedDirector] winSize];
-	
-		// position the label on the center of the screen
-		label.position =  ccp( size.width /2 , size.height/2 );
-		
-		// add the label as a child to this Layer
+		CCMenuItemFont *play = [CCMenuItemFont itemFromString: @"PLAY" target: self selector: @selector(play:)];
+        play.position = ccp(160, 160);
         
-        [self addChild: label];
-        
-        Coco *coco = [Coco create];
-        [self addChild: coco];
+        CCMenu *menu = [CCMenu menuWithItems: play, nil];
+        menu.position = ccp(0,0);
+        [self addChild: menu];
 	}
 	return self;
 }
 
-- (void) askAboutTime
+- (void) play: (id) sender
 {
-    
-    NSDate *currentDate = [NSDate date];
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter new] autorelease];
-    [dateFormatter setDateStyle: kCFDateFormatterNoStyle];
-    [dateFormatter setTimeStyle: kCFDateFormatterFullStyle];
-    
-    //label.string = [NSString stringWithFormat: @"%@", currentDate];
-    label.string = [dateFormatter stringFromDate: currentDate];
-    
+    [[CCDirector sharedDirector] replaceScene: [CCTransitionFade transitionWithDuration: 1 scene: [GameLayer scene]]];
 }
 
 

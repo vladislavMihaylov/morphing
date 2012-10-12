@@ -134,6 +134,12 @@
 		048C046B1607191B009996CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C046A1607191B009996CB /* AppDelegate.m */; };
 		048C046E1607191B009996CB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C046D1607191B009996CB /* RootViewController.m */; };
 		048C04711607191B009996CB /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 048C04701607191B009996CB /* HelloWorldLayer.mm */; };
+		F545E64116246B910055C8F7 /* textureEarth.png in Resources */ = {isa = PBXBuildFile; fileRef = F545E64016246B910055C8F7 /* textureEarth.png */; };
+		F545E64516246C000055C8F7 /* GameLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F545E64416246BFF0055C8F7 /* GameLayer.mm */; };
+		F545E7EF16247FEC0055C8F7 /* Ground.m in Sources */ = {isa = PBXBuildFile; fileRef = F545E7EE16247FEC0055C8F7 /* Ground.m */; };
+		F580D95116250340000C466C /* textureWater.png in Resources */ = {isa = PBXBuildFile; fileRef = F580D95016250340000C466C /* textureWater.png */; };
+		F59021561627EB6200366A33 /* ScramblingCoco.mm in Sources */ = {isa = PBXBuildFile; fileRef = F59021551627EB6200366A33 /* ScramblingCoco.mm */; };
+		F59021591628229600366A33 /* GameConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F59021581628229600366A33 /* GameConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -390,6 +396,15 @@
 		048C046F1607191B009996CB /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		048C04701607191B009996CB /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		048C04721607191B009996CB /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		F545E64016246B910055C8F7 /* textureEarth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textureEarth.png; sourceTree = "<group>"; };
+		F545E64316246BFF0055C8F7 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		F545E64416246BFF0055C8F7 /* GameLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameLayer.mm; sourceTree = "<group>"; };
+		F545E7ED16247FEC0055C8F7 /* Ground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ground.h; sourceTree = "<group>"; };
+		F545E7EE16247FEC0055C8F7 /* Ground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ground.m; sourceTree = "<group>"; };
+		F580D95016250340000C466C /* textureWater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textureWater.png; sourceTree = "<group>"; };
+		F59021541627EB6200366A33 /* ScramblingCoco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScramblingCoco.h; sourceTree = "<group>"; };
+		F59021551627EB6200366A33 /* ScramblingCoco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScramblingCoco.mm; sourceTree = "<group>"; };
+		F59021581628229600366A33 /* GameConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +429,8 @@
 		047F8B2D1612E98100241C12 /* CocoSprites */ = {
 			isa = PBXGroup;
 			children = (
+				F580D95016250340000C466C /* textureWater.png */,
+				F545E64016246B910055C8F7 /* textureEarth.png */,
 				0480DD0B1616CB90005D5A7F /* head.png */,
 				047F8B2E1612EA1000241C12 /* body.png */,
 				047F8B301612EA1000241C12 /* leftFoot.png */,
@@ -433,10 +450,14 @@
 				0480DD081616C4C7005D5A7F /* RunningCoco.mm */,
 				047E81091617F22500235F71 /* SwimmingCoco.h */,
 				047E810A1617F22500235F71 /* SwimmingCoco.mm */,
+				F59021541627EB6200366A33 /* ScramblingCoco.h */,
+				F59021551627EB6200366A33 /* ScramblingCoco.mm */,
 				0480C85B1618827D00E6ED90 /* Coco.h */,
 				0480C85C1618827D00E6ED90 /* Coco.mm */,
 				0480C8621618903600E6ED90 /* CurrentCoco.h */,
 				0480C8631618903600E6ED90 /* CurrentCoco.mm */,
+				F545E7ED16247FEC0055C8F7 /* Ground.h */,
+				F545E7EE16247FEC0055C8F7 /* Ground.m */,
 			);
 			name = cocoMorphAnimation;
 			sourceTree = "<group>";
@@ -483,7 +504,10 @@
 				048C046D1607191B009996CB /* RootViewController.m */,
 				048C046F1607191B009996CB /* HelloWorldLayer.h */,
 				048C04701607191B009996CB /* HelloWorldLayer.mm */,
+				F545E64316246BFF0055C8F7 /* GameLayer.h */,
+				F545E64416246BFF0055C8F7 /* GameLayer.mm */,
 				048C04721607191B009996CB /* GameConfig.h */,
+				F59021581628229600366A33 /* GameConfig.m */,
 				04809B831615B3C10075B467 /* Common.h */,
 				04809B841615B3C10075B467 /* Common.mm */,
 				048C031816071917009996CB /* Resources */,
@@ -887,6 +911,8 @@
 				047F8B381612EA1000241C12 /* rightFoot.png in Resources */,
 				047F8B391612EA1000241C12 /* rightHand.png in Resources */,
 				0480DD0C1616CB90005D5A7F /* head.png in Resources */,
+				F545E64116246B910055C8F7 /* textureEarth.png in Resources */,
+				F580D95116250340000C466C /* textureWater.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,6 +1027,10 @@
 				047E810B1617F22500235F71 /* SwimmingCoco.mm in Sources */,
 				0480C85D1618827D00E6ED90 /* Coco.mm in Sources */,
 				0480C8641618903600E6ED90 /* CurrentCoco.mm in Sources */,
+				F545E64516246C000055C8F7 /* GameLayer.mm in Sources */,
+				F545E7EF16247FEC0055C8F7 /* Ground.m in Sources */,
+				F59021561627EB6200366A33 /* ScramblingCoco.mm in Sources */,
+				F59021591628229600366A33 /* GameConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,7 +1049,7 @@
 					"COCOS2D_DEBUG=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
@@ -1034,7 +1064,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;

@@ -12,16 +12,17 @@
 
 @implementation AnimationNode
 
-- (id) initWithSprite: (CCSprite *) sprite position: (CGPoint) point anchorPoint: (CGPoint) anchorPoint
+@synthesize frames;
+
+- (id) initWithSprite: (CCSprite *) sprite position: (CGPoint) point anchorPoint: (CGPoint) anchorPoint andSpeed: (float) currentSpeed
 {
     if (self = [super init])
     {
         spriteNode = sprite;
-        //spriteNode.position = point;
         spriteNode.anchorPoint = anchorPoint;
         [self addChild: spriteNode];
         time = 0;
-        speed = 5;
+        speed = currentSpeed;
         nextFrameNumber = 1;
         
         [self scheduleUpdate];
@@ -30,9 +31,9 @@
     return self;
 }
 
-+ (AnimationNode *) createWithSprite: (CCSprite *) sprite position: (CGPoint) point anchorPoint: (CGPoint) anchorPoint
++ (AnimationNode *) createWithSprite: (CCSprite *) sprite position: (CGPoint) point anchorPoint: (CGPoint) anchorPoint andSpeed: (float) currentSpeed
 {
-    AnimationNode *animation = [[[AnimationNode alloc] initWithSprite: sprite position: point anchorPoint: anchorPoint] autorelease];
+    AnimationNode *animation = [[[AnimationNode alloc] initWithSprite: sprite position: point anchorPoint: anchorPoint andSpeed: currentSpeed] autorelease];
     
     return animation;
 }
@@ -113,51 +114,6 @@
         }
     }
     
-    
-    
-    //CCLOG(@"Lenght: %f TIme: %f Scalar: %f", lenght, time, skalar);
-    
-    //CCLOG(@"Time: %f", time);
-    
-    /*if (time >= nextFrameNumber - (dt * 1.5))
-    {
-        nextFrameNumber ++;
-    }
-    if(nextFrameNumber > frames.size() - 1)
-    {
-        nextFrameNumber = 1;
-        time = 0;
-    }
-    
-    
-    
-    if(speed <= 0)
-    {
-        speed = 0;
-    }
-    else if (speed > 8)
-    {
-        speed = 8;
-    }
-    
-    float multiplier = dt * speed;
-    
-    //CCLOG(@"Coef: %f", time);
-    
-    time += multiplier;
-    
-    float skalar = time - (nextFrameNumber - 1);
-    
-    float nextAngle = frames[nextFrameNumber].angle;
-    float currentAngle = frames[nextFrameNumber - 1].angle;
-    
-    float necessaryAngle = currentAngle * (1 - skalar) + nextAngle * skalar;
-    
-    currentAngle = necessaryAngle;
-    
-    [spriteNode setRotation: currentAngle];*/
-    
-    //CCLOG(@"Skalar: %f, nextAngle: %f, currentAngle: %f", skalar, nextAngle, currentAngle);
 }
 
 @end

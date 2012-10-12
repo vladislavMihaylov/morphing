@@ -17,7 +17,7 @@
 //
 #define kGameAutorotationNone 0
 #define kGameAutorotationCCDirector 1
-#define kGameAutorotationUIViewController 0
+#define kGameAutorotationUIViewController 2
 
 //
 // Define here the type of autorotation that you want for your game
@@ -43,6 +43,11 @@
 
 #define swimmingCocoTag      10;
 #define runningCocoTag       11;
+
+#define runningAction        100
+#define swimmingAction       101
+
+extern BOOL ICanJump;
 
 #endif // __GAME_CONFIG_H
 

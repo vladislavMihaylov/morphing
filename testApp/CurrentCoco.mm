@@ -11,18 +11,26 @@
 
 @implementation CurrentCoco
 
+@synthesize body;
+@synthesize head;
+@synthesize rightFoot;
+@synthesize leftFoot;
+@synthesize rightHand;
+@synthesize leftHand;
+
 - (void) dealloc
 {
     [super dealloc];
 }
 
-- (id) init
+- (id) initWithSpeed: (float) speed
 {
     if(self = [super init])
     {
-        /*CGPoint positionBody = ccp(160, 240);
-        CGPoint anchorBody = ccp(0.5, 0.4);
         NSInteger zBody = 2;
+        
+        CGPoint positionBody = ccp(160, 240);
+        CGPoint anchorBody = ccp(0.5, 0.4);
         
         CGPoint positionHead = ccp(75, 200);
         CGPoint anchorHead = ccp(0.5, 0.0);
@@ -39,46 +47,49 @@
         CGPoint positionLeftFoot = ccp(75, 50);
         CGPoint anchorLeftFoot = ccp(0.5, 1.0);
         
-        body = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"body.png"] position: positionBody anchorPoint: anchorBody];
-        [body addFrame: AFrame(0, 80)];
-        [body addFrame: AFrame(1, 78)];
-        [body addFrame: AFrame(2, 80)];
-        [body addFrame: AFrame(3, 82)];
-        [body addFrame: AFrame(4, 80)];
+        body = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"body.png"] position: positionBody anchorPoint: anchorBody andSpeed: speed];
         
-        head = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"head.png"]  position: positionHead anchorPoint: anchorHead];
+        
+        [body addFrame: AFrame(0, 0)];
+        [body addFrame: AFrame(1, 3)];
+        [body addFrame: AFrame(2, 0)];
+        [body addFrame: AFrame(3, -3)];
+        [body addFrame: AFrame(4, 0)];
+        
+        
+        head = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"head.png"]  position: positionHead anchorPoint: anchorHead andSpeed: speed];
         [head addFrame: AFrame(0, 0)];
         [head addFrame: AFrame(1, 5)];
         [head addFrame: AFrame(2, 0)];
         [head addFrame: AFrame(3, -5)];
         [head addFrame: AFrame(4, 0)];
         
-        rightHand = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"rightHand.png"]  position: positionRightHand anchorPoint: anchorRightHand];
+        rightHand = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"rightHand.png"]  position: positionRightHand anchorPoint: anchorRightHand andSpeed: speed];
         [rightHand addFrame: AFrame(0, 0)];
-        [rightHand addFrame: AFrame(1, 90)];
-        [rightHand addFrame: AFrame(2, 180)];
-        [rightHand addFrame: AFrame(3, 270)];
-        [rightHand addFrame: AFrame(4, 360)];
+        [rightHand addFrame: AFrame(1, -65)];
+        [rightHand addFrame: AFrame(2, 0)];
+        [rightHand addFrame: AFrame(3, 10)];
+        [rightHand addFrame: AFrame(4, 0)];
         
-        leftHand = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"leftHand.png"]  position: positionLeftHand anchorPoint: anchorLeftHand];
-        [leftHand addFrame: AFrame(0, 180)];
-        [leftHand addFrame: AFrame(1, 270)];
-        [leftHand addFrame: AFrame(2, 360)];
-        [leftHand addFrame: AFrame(3, 450)];
-        [leftHand addFrame: AFrame(4, 540)];
+        leftHand = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"leftHand.png"]  position: positionLeftHand anchorPoint: anchorLeftHand andSpeed: speed];
+        [leftHand addFrame: AFrame(0, 0)];
+        [leftHand addFrame: AFrame(1, 10)];
+        [leftHand addFrame: AFrame(2, 0)];
+        [leftHand addFrame: AFrame(3, -65)];
+        [leftHand addFrame: AFrame(4, 0)];
         
-        rightFoot = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"rightFoot.png"]  position: positionRightFoot anchorPoint: anchorRightFoot];
+        rightFoot = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"rightFoot.png"]  position: positionRightFoot anchorPoint: anchorRightFoot andSpeed: speed];
         [rightFoot addFrame: AFrame(0, 0)];
-        [rightFoot addFrame: AFrame(1, 10)];
+        [rightFoot addFrame: AFrame(1, 40)];
         [rightFoot addFrame: AFrame(2, 0)];
-        [rightFoot addFrame: AFrame(3, -15)];
+        [rightFoot addFrame: AFrame(3, -65)];
         [rightFoot addFrame: AFrame(4, 0)];
         
-        leftFoot = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"leftFoot.png"]  position: positionLeftFoot anchorPoint: anchorLeftFoot];
+        leftFoot = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"leftFoot.png"]  position: positionLeftFoot anchorPoint: anchorLeftFoot andSpeed: speed];
         [leftFoot addFrame: AFrame(0, 0)];
-        [leftFoot addFrame: AFrame(1, -15)];
+        [leftFoot addFrame: AFrame(1, -65)];
         [leftFoot addFrame: AFrame(2, 0)];
-        [leftFoot addFrame: AFrame(3, 10)];
+        [leftFoot addFrame: AFrame(3, 40)];
         [leftFoot addFrame: AFrame(4, 0)];
         
         body.position = positionBody;
@@ -94,9 +105,7 @@
         [body addChildToNode: rightHand withZ: 1];
         [body addChildToNode: leftHand withZ: -1];
         [body addChildToNode: rightFoot withZ: 1];
-        [body addChildToNode: leftFoot withZ: -1];*/
-        
-        
+        [body addChildToNode: leftFoot withZ: -1];
     }
     
     return self;
@@ -112,9 +121,9 @@
     [leftFoot increaseSpeedAnimation];
 }
 
-+ (CurrentCoco *) create
++ (CurrentCoco *) createWithSpeed: (float) speed
 {
-    CurrentCoco *currentCoco = [[[CurrentCoco alloc] init] autorelease];
+    CurrentCoco *currentCoco = [[[CurrentCoco alloc] initWithSpeed: speed] autorelease];
     
     return currentCoco;
 }

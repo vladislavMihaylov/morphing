@@ -17,11 +17,13 @@
     AnimationFramePool frames;      // Вектор структур с параметрами анимации
 }
 
-+ (AnimationNode *) createWithSprite: (CCSprite *) sprite position: (CGPoint) point anchorPoint: (CGPoint) anchorPoint; 
++ (AnimationNode *) createWithSprite: (CCSprite *) sprite position: (CGPoint) point anchorPoint: (CGPoint) anchorPoint andSpeed: (float) currentSpeed; 
 
 - (void) addFrame: (AnimationFrame) frame;
 - (void) addChildToNode: (AnimationNode *) child withZ: (NSInteger) z;
 - (void) increaseSpeedAnimation;
 - (void) showVector;
+
+@property (nonatomic, assign) AnimationFramePool frames;
 
 @end
