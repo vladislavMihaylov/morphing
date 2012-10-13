@@ -19,10 +19,13 @@
     AnimationNode *leftHand;
     AnimationNode *rightFoot;
     AnimationNode *leftFoot;
+    
+    float currentSpeed;
 }
 
 + (SwimmingCoco *) createWithSpeed: (float) speed;
 - (void) increaseSpeed;
+- (float) getCurrentCocoSpeed;
 
 @property (nonatomic, assign) AnimationNode *body;
 @property (nonatomic, assign) AnimationNode *head;

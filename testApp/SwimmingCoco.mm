@@ -119,6 +119,15 @@
     [leftFoot increaseSpeedAnimation];
 }
 
+- (float) getCurrentCocoSpeed
+{
+    currentSpeed = [body getCurrentSpeed];
+    CCLOG(@"currentSpeed = %f", currentSpeed);
+    
+    return currentSpeed;
+    
+}
+
 + (SwimmingCoco *) createWithSpeed: (float) speed
 {
     SwimmingCoco *swimmingCoco = [[[SwimmingCoco alloc] initWithSpeed: speed] autorelease];

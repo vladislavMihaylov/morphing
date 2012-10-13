@@ -23,7 +23,9 @@
 - (void) addChildToNode: (AnimationNode *) child withZ: (NSInteger) z;
 - (void) increaseSpeedAnimation;
 - (void) showVector;
+- (float) getCurrentSpeed;
 
 @property (nonatomic, assign) AnimationFramePool frames;
+@property (nonatomic, assign) float speed;
 
 @end

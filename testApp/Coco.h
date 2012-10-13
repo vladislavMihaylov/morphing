@@ -30,11 +30,13 @@
     AnimationNode *leftFoot;
     
     NSInteger currentAction;
+    float currentGroundSpeed;
 }
 
 + (Coco *) createWithSpeed: (float) speed;
 
 - (void) doAction: (NSInteger) numberOfAction withSpeed: (float) speed;
+- (float) getCurrentGroundSpeed;
 
 @property (nonatomic, assign) AnimationNode *body;
 @property (nonatomic, assign) AnimationNode *head;

@@ -101,7 +101,7 @@
         [self showWater];
     }
     
-    CCLOG(@"countSpeed: %f", distance);
+    //CCLOG(@"countSpeed: %f", distance);
     
     for (CCSprite *currentSprite in groundsArray)
     {

@@ -52,7 +52,10 @@
         {
             currentSpeed += 0.5;
             [coco doAction: 0 withSpeed: currentSpeed];
-            [ground increaseSpeedAnimation: currentSpeed];
+            
+            
+            
+            [ground increaseSpeedAnimation: [coco getCurrentGroundSpeed]];
         }];
         runBtn.position = ccp(50, 30);
         
@@ -60,7 +63,7 @@
         {
             currentSpeed += 0.5;
             [coco doAction: 1 withSpeed: currentSpeed];
-            [ground increaseSpeedAnimation: currentSpeed];
+            [ground increaseSpeedAnimation: [coco getCurrentGroundSpeed]];
         }];
         swimBtn.position = ccp(150, 30);
         

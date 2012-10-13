@@ -13,6 +13,7 @@
 @implementation AnimationNode
 
 @synthesize frames;
+@synthesize speed;
 
 - (id) initWithSprite: (CCSprite *) sprite position: (CGPoint) point anchorPoint: (CGPoint) anchorPoint andSpeed: (float) currentSpeed
 {
@@ -29,6 +30,11 @@
     }
     
     return self;
+}
+
+- (float) getCurrentSpeed
+{
+    return speed;
 }
 
 + (AnimationNode *) createWithSprite: (CCSprite *) sprite position: (CGPoint) point anchorPoint: (CGPoint) anchorPoint andSpeed: (float) currentSpeed
