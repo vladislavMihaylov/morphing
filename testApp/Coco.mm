@@ -31,14 +31,22 @@
         currentCoco = [CurrentCoco createWithSpeed: 0];
 
         swimmingCoco = [SwimmingCoco createWithSpeed: 0];
-        
         runningCoco = [RunningCoco createWithSpeed: 0];
+        scramblingCoco = [ScramblingCoco createWithSpeed: 0];
+        goingDownCoco = [GoingDownCoco createWithSpeed: 0];
         
         [swimmingCoco retain];
         swimmingCoco.tag = kSwimmingAction;
         
         [runningCoco retain];
         runningCoco.tag = kRunningAction;
+        
+        [scramblingCoco retain];
+        scramblingCoco.tag = kScramblingAction;
+        
+        [goingDownCoco retain];
+        goingDownCoco.tag = kGoingDownAction;
+        goingDownCoco.scaleX = -1;
         
         currentGroundSpeed = 0;
         
@@ -102,10 +110,11 @@
     }
     else if(numberOfAction == 2)
     {
-        if(currentAction != kSwimmingAction)
+        if(currentAction == kRunningAction)
         {
             ICanJump = NO;
-            [currentCoco runAction: [CCJumpTo actionWithDuration: 0.7 position: currentCoco.position height: 150 jumps: 1]];
+            
+            [self runAction: [CCJumpTo actionWithDuration: 0.7 position: self.position height: 50 jumps: 1]];
             [self runAction:
                     [CCSequence actions:
                                 [CCDelayTime actionWithDuration: 0.7],
@@ -115,6 +124,35 @@
              ];
         }
     }
+    else if(numberOfAction == 3)
+    {
+        if(currentAction != kScramblingAction)
+        {
+            [self removeChildByTag: currentAction cleanup: NO];
+            [self addChild: scramblingCoco];
+            currentAction = kScramblingAction;
+        }
+        
+        [scramblingCoco increaseSpeed];
+        currentGroundSpeed = [scramblingCoco getCurrentCocoSpeed];
+        
+        //[currentCoco increaseSpeed];
+    }
+    else if(numberOfAction == 4)
+    {
+        if(currentAction != kGoingDownAction)
+        {
+            [self removeChildByTag: currentAction cleanup: NO];
+            [self addChild: goingDownCoco];
+            currentAction = kGoingDownAction;
+        }
+        
+        [goingDownCoco increaseSpeed];
+        currentGroundSpeed = [goingDownCoco getCurrentCocoSpeed];
+        
+        //[currentCoco increaseSpeed];
+    }
+
 }
 
 - (float) getCurrentGroundSpeed

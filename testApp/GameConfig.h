@@ -41,11 +41,18 @@
 #error(unknown architecture)
 #endif
 
-#define kSwimmingCocoTag      10;
-#define kRunningCocoTag       11;
+#define kSwimmingCocoTag      10
+#define kRunningCocoTag       11
 
 #define kRunningAction        100
 #define kSwimmingAction       101
+#define kScramblingAction     102
+#define kGoingDownAction      103
+
+#define kIsGround             201
+#define kIsWater              202
+#define kIsScrambleMountain   203
+#define kIsGoDownMountain     204
 
 extern BOOL ICanJump;
 

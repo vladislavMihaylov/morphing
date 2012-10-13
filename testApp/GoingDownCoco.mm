@@ -6,10 +6,10 @@
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ScramblingCoco.h"
+#import "GoingDownCoco.h"
 
 
-@implementation ScramblingCoco
+@implementation GoingDownCoco
 
 @synthesize body;
 @synthesize head;
@@ -122,11 +122,11 @@
     
 }
 
-+ (ScramblingCoco *) createWithSpeed: (float) speed
++ (GoingDownCoco *) createWithSpeed: (float) speed
 {
-    ScramblingCoco *scramblingCoco = [[[ScramblingCoco alloc] initWithSpeed: speed] autorelease];
+    GoingDownCoco *goingDownCoco = [[[GoingDownCoco alloc] initWithSpeed: speed] autorelease];
     
-    return scramblingCoco;
+    return goingDownCoco;
 }
 
 

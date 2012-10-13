@@ -7,7 +7,7 @@
 //
 
 #import "Ground.h"
-
+#import "GameConfig.h"
 
 @implementation Ground
 
@@ -23,6 +23,7 @@
     {
         groundsArray = [[NSMutableArray alloc] init];
         
+        currentGroundType = kIsGround;
         
         for (int i = 0; i < 3; i++)
         {
@@ -53,6 +54,8 @@
 
 - (void) showWater
 {
+    currentGroundType = kIsWater;
+    
     for (CCSprite *currentSprite in groundsArray)
     {
         [self removeChild: currentSprite cleanup: YES];
@@ -93,15 +96,6 @@
         time = 0;
     }
     
-    distance += speed;
-    
-    if(distance > 1000)
-    {
-        distance = 0;
-        [self showWater];
-    }
-    
-    //CCLOG(@"countSpeed: %f", distance);
     
     for (CCSprite *currentSprite in groundsArray)
     {

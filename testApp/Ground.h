@@ -11,6 +11,7 @@
 
 @interface Ground: CCNode
 {
+    
     CCSprite *ground;
     
     NSMutableArray *groundsArray;
@@ -19,12 +20,15 @@
     NSInteger nextFrameNumber;      // Номер следующего кадра
     
     float speed;                    // Скорость анимации
+        
+    NSInteger currentGroundType;
     
-    float distance;
 }
 
 + (Ground *) create;
 
 - (void) increaseSpeedAnimation: (float) speed;
+
+- (void) showWater;
 
 @end

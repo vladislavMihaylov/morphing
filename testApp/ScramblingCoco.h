@@ -20,10 +20,13 @@
     AnimationNode *leftHand;
     AnimationNode *rightFoot;
     AnimationNode *leftFoot;
+    
+    float currentSpeed;
 }
 
 + (ScramblingCoco *) createWithSpeed: (float) speed;
 - (void) increaseSpeed;
+- (float) getCurrentCocoSpeed;
 
 @property (nonatomic, assign) AnimationNode *body;
 @property (nonatomic, assign) AnimationNode *head;
