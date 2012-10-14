@@ -1,16 +1,16 @@
 //
-//  Coco.m
-//  testApp
+//  Francois.m
+//  morphing
 //
-//  Created by Mac on 30.09.12.
+//  Created by Vlad on 14.10.12.
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Coco.h"
+#import "Francois.h"
 
 #import "GameConfig.h"
 
-@implementation Coco
+@implementation Francois
 
 - (void) dealloc
 {
@@ -21,23 +21,23 @@
 {
     if(self = [super init])
     {
-        swimmingCoco = [SwimmingCoco createWithSpeed: 0];
-        runningCoco = [RunningCoco createWithSpeed: 0];
-        scramblingCoco = [ScramblingCoco createWithSpeed: 0];
-        goingDownCoco = [GoingDownCoco createWithSpeed: 0];
+        swimmingFrancois = [SwimmingFrancois createWithSpeed: 0];
+        runningFrancois = [RunningFrancois createWithSpeed: 0];
+        scramblingFrancois = [ScramblingFrancois createWithSpeed: 0];
+        goingDownFrancois = [GoingDownFrancois createWithSpeed: 0];
         
-        [swimmingCoco retain];
-        swimmingCoco.tag = kSwimmingAction;
+        [swimmingFrancois retain];
+        swimmingFrancois.tag = kSwimmingAction;
         
-        [runningCoco retain];
-        runningCoco.tag = kRunningAction;
+        [runningFrancois retain];
+        runningFrancois.tag = kRunningAction;
         
-        [scramblingCoco retain];
-        scramblingCoco.tag = kScramblingAction;
+        [scramblingFrancois retain];
+        scramblingFrancois.tag = kScramblingAction;
         
-        [goingDownCoco retain];
-        goingDownCoco.tag = kGoingDownAction;
-        goingDownCoco.scaleX = -1;
+        [goingDownFrancois retain];
+        goingDownFrancois.tag = kGoingDownAction;
+        goingDownFrancois.scaleX = -1;
         
         currentGroundSpeed = 0;
     }
@@ -52,28 +52,26 @@
         if(currentAction != kRunningAction)
         {
             [self removeChildByTag: currentAction cleanup: NO];
-            [self addChild: runningCoco];
+            [self addChild: runningFrancois];
             currentAction = kRunningAction;
         }
         
-        [runningCoco increaseSpeed];
-        currentGroundSpeed = [runningCoco getCurrentCocoSpeed];
+        [runningFrancois increaseSpeed];
+        currentGroundSpeed = [runningFrancois getCurrentCocoSpeed];
         
-        //[currentCoco increaseSpeed];
     }
     else if(numberOfAction == 1)
-    {        
+    {
         if(currentAction != kSwimmingAction)
         {
             [self removeChildByTag: currentAction cleanup: NO];
-            [self addChild: swimmingCoco];
+            [self addChild: swimmingFrancois];
             currentAction = kSwimmingAction;
         }
         
-        [swimmingCoco increaseSpeed];
-        currentGroundSpeed = [swimmingCoco getCurrentCocoSpeed];
+        [swimmingFrancois increaseSpeed];
+        currentGroundSpeed = [swimmingFrancois getCurrentCocoSpeed];
         
-        //[currentCoco increaseSpeed];
     }
     else if(numberOfAction == 2)
     {
@@ -83,11 +81,11 @@
             
             [self runAction: [CCJumpTo actionWithDuration: 0.7 position: self.position height: 50 jumps: 1]];
             [self runAction:
-                    [CCSequence actions:
-                                [CCDelayTime actionWithDuration: 0.7],
-                                [CCCallFunc actionWithTarget: self
-                                                    selector: @selector(solveJump)],
-                     nil]
+             [CCSequence actions:
+              [CCDelayTime actionWithDuration: 0.7],
+              [CCCallFunc actionWithTarget: self
+                                  selector: @selector(solveJump)],
+              nil]
              ];
         }
     }
@@ -96,12 +94,12 @@
         if(currentAction != kScramblingAction)
         {
             [self removeChildByTag: currentAction cleanup: NO];
-            [self addChild: scramblingCoco];
+            [self addChild: scramblingFrancois];
             currentAction = kScramblingAction;
         }
         
-        [scramblingCoco increaseSpeed];
-        currentGroundSpeed = [scramblingCoco getCurrentCocoSpeed];
+        [scramblingFrancois increaseSpeed];
+        currentGroundSpeed = [scramblingFrancois getCurrentCocoSpeed];
         
         //[currentCoco increaseSpeed];
     }
@@ -110,16 +108,16 @@
         if(currentAction != kGoingDownAction)
         {
             [self removeChildByTag: currentAction cleanup: NO];
-            [self addChild: goingDownCoco];
+            [self addChild: goingDownFrancois];
             currentAction = kGoingDownAction;
         }
         
-        [goingDownCoco increaseSpeed];
-        currentGroundSpeed = [goingDownCoco getCurrentCocoSpeed];
+        [goingDownFrancois increaseSpeed];
+        currentGroundSpeed = [goingDownFrancois getCurrentCocoSpeed];
         
         //[currentCoco increaseSpeed];
     }
-
+    
 }
 
 - (float) getCurrentGroundSpeed
@@ -142,11 +140,11 @@
     [leftFoot increaseSpeedAnimation];
 }
 
-+ (Coco *) createWithSpeed: (float) speed
++ (Francois *) createWithSpeed: (float) speed
 {
-    Coco *coco = [[[Coco alloc] initWithSpeed: speed] autorelease];
+    Francois *francois = [[[Francois alloc] initWithSpeed: speed] autorelease];
     
-    return coco;
+    return francois;
 }
 
 @end

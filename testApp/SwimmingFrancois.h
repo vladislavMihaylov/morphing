@@ -9,8 +9,22 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface SwimmingFrancois : CCNode {
+#import "AnimationNode.h"
+
+@interface SwimmingFrancois : CCNode
+{
+    AnimationNode *body;
+    AnimationNode *head;
+    AnimationNode *rightHand;
+    AnimationNode *leftHand;
+    AnimationNode *rightFoot;
+    AnimationNode *leftFoot;
     
+    float currentSpeed;
 }
+
++ (SwimmingFrancois *) createWithSpeed: (float) speed;
+- (void) increaseSpeed;
+- (float) getCurrentCocoSpeed;
 
 @end

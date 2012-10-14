@@ -9,8 +9,23 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface GoingDownFrancois : CCNode {
+#import "AnimationNode.h"
+
+@interface GoingDownFrancois : CCNode
+{
+    AnimationNode *body;
+    AnimationNode *head;
+    AnimationNode *rightHand;
+    AnimationNode *leftHand;
+    AnimationNode *rightFoot;
+    AnimationNode *leftFoot;
     
+    float currentSpeed;
 }
+
++ (GoingDownFrancois *) createWithSpeed: (float) speed;
+- (void) increaseSpeed;
+- (float) getCurrentCocoSpeed;
+
 
 @end

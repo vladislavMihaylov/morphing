@@ -1,15 +1,15 @@
 //
-//  JumpingCoco.m
+//  SwimmingFrancois.m
 //  morphing
 //
-//  Created by Vlad on 12.10.12.
+//  Created by Vlad on 14.10.12.
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "GoingDownCoco.h"
+#import "SwimmingFrancois.h"
 
 
-@implementation GoingDownCoco
+@implementation SwimmingFrancois
 
 - (void) dealloc
 {
@@ -40,11 +40,11 @@
         CGPoint anchorLeftFoot = ccp(0.5, 1.0);
         
         body = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"body.png"] position: positionBody anchorPoint: anchorBody andSpeed: speed];
-        [body addFrame: AFrame(0, 0)];
-        [body addFrame: AFrame(1, 3)];
-        [body addFrame: AFrame(2, 0)];
-        [body addFrame: AFrame(3, -2)];
-        [body addFrame: AFrame(4, 0)];
+        [body addFrame: AFrame(0, 80)];
+        [body addFrame: AFrame(1, 78)];
+        [body addFrame: AFrame(2, 80)];
+        [body addFrame: AFrame(3, 82)];
+        [body addFrame: AFrame(4, 80)];
         
         head = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"head.png"]  position: positionHead anchorPoint: anchorHead andSpeed: speed];
         [head addFrame: AFrame(0, 0)];
@@ -54,28 +54,32 @@
         [head addFrame: AFrame(4, 0)];
         
         rightHand = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"rightHand.png"]  position: positionRightHand anchorPoint: anchorRightHand andSpeed: speed];
-        [rightHand addFrame: AFrame(0, -75)];
-        [rightHand addFrame: AFrame(1, -90)];
-        [rightHand addFrame: AFrame(2, -105)];
-        [rightHand addFrame: AFrame(3, -90)];
-        [rightHand addFrame: AFrame(4, -75)];
+        [rightHand addFrame: AFrame(0, 0)];
+        [rightHand addFrame: AFrame(1, 90)];
+        [rightHand addFrame: AFrame(2, 180)];
+        [rightHand addFrame: AFrame(3, 270)];
+        [rightHand addFrame: AFrame(4, 360)];
         
         leftHand = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"leftHand.png"]  position: positionLeftHand anchorPoint: anchorLeftHand andSpeed: speed];
-        [leftHand addFrame: AFrame(0, -105)];
-        [leftHand addFrame: AFrame(1, -90)];
-        [leftHand addFrame: AFrame(2, -75)];
-        [leftHand addFrame: AFrame(3, -90)];
-        [leftHand addFrame: AFrame(4, -105)];
+        [leftHand addFrame: AFrame(0, 180)];
+        [leftHand addFrame: AFrame(1, 270)];
+        [leftHand addFrame: AFrame(2, 360)];
+        [leftHand addFrame: AFrame(3, 450)];
+        [leftHand addFrame: AFrame(4, 540)];
         
         rightFoot = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"rightFoot.png"]  position: positionRightFoot anchorPoint: anchorRightFoot andSpeed: speed];
         [rightFoot addFrame: AFrame(0, 0)];
-        [rightFoot addFrame: AFrame(1, -15)];
+        [rightFoot addFrame: AFrame(1, 10)];
         [rightFoot addFrame: AFrame(2, 0)];
+        [rightFoot addFrame: AFrame(3, -15)];
+        [rightFoot addFrame: AFrame(4, 0)];
         
         leftFoot = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"leftFoot.png"]  position: positionLeftFoot anchorPoint: anchorLeftFoot andSpeed: speed];
-        [leftFoot addFrame: AFrame(0, -15)];
-        [leftFoot addFrame: AFrame(1, 0)];
-        [leftFoot addFrame: AFrame(2, -15)];
+        [leftFoot addFrame: AFrame(0, 0)];
+        [leftFoot addFrame: AFrame(1, -15)];
+        [leftFoot addFrame: AFrame(2, 0)];
+        [leftFoot addFrame: AFrame(3, 10)];
+        [leftFoot addFrame: AFrame(4, 0)];
         
         body.position = positionBody;
         head.position = positionHead;
@@ -91,6 +95,8 @@
         [body addChildToNode: leftHand withZ: -1];
         [body addChildToNode: rightFoot withZ: 1];
         [body addChildToNode: leftFoot withZ: -1];
+        
+        
     }
     
     return self;
@@ -115,13 +121,12 @@
     
 }
 
-+ (GoingDownCoco *) createWithSpeed: (float) speed
++ (SwimmingFrancois *) createWithSpeed: (float) speed
 {
-    GoingDownCoco *goingDownCoco = [[[GoingDownCoco alloc] initWithSpeed: speed] autorelease];
+    SwimmingFrancois *swimmingFrancois = [[[SwimmingFrancois alloc] initWithSpeed: speed] autorelease];
     
-    return goingDownCoco;
+    return swimmingFrancois;
 }
-
 
 
 @end

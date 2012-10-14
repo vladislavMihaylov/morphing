@@ -139,11 +139,11 @@
 		F580D95116250340000C466C /* textureWater.png in Resources */ = {isa = PBXBuildFile; fileRef = F580D95016250340000C466C /* textureWater.png */; };
 		F59021561627EB6200366A33 /* ScramblingCoco.mm in Sources */ = {isa = PBXBuildFile; fileRef = F59021551627EB6200366A33 /* ScramblingCoco.mm */; };
 		F59021591628229600366A33 /* GameConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F59021581628229600366A33 /* GameConfig.m */; };
-		F5AD3169162AF00700744572 /* Francois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3168162AF00700744572 /* Francois.m */; };
-		F5AD316C162AF02100744572 /* RunningFrancois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD316B162AF02100744572 /* RunningFrancois.m */; };
-		F5AD316F162AF04500744572 /* SwimmingFrancois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD316E162AF04500744572 /* SwimmingFrancois.m */; };
-		F5AD3172162AF05800744572 /* ScramblingFrancois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3171162AF05800744572 /* ScramblingFrancois.m */; };
-		F5AD3175162AF06B00744572 /* GoingDownFrancois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3174162AF06B00744572 /* GoingDownFrancois.m */; };
+		F5AD3169162AF00700744572 /* Francois.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3168162AF00700744572 /* Francois.mm */; };
+		F5AD316C162AF02100744572 /* RunningFrancois.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5AD316B162AF02100744572 /* RunningFrancois.mm */; };
+		F5AD316F162AF04500744572 /* SwimmingFrancois.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5AD316E162AF04500744572 /* SwimmingFrancois.mm */; };
+		F5AD3172162AF05800744572 /* ScramblingFrancois.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3171162AF05800744572 /* ScramblingFrancois.mm */; };
+		F5AD3175162AF06B00744572 /* GoingDownFrancois.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3174162AF06B00744572 /* GoingDownFrancois.mm */; };
 		F5F0A2F11629609000D11774 /* GoingDownCoco.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5F0A2F01629609000D11774 /* GoingDownCoco.mm */; };
 		F5F0A2F516297ACF00D11774 /* GUILayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5F0A2F416297ACF00D11774 /* GUILayer.mm */; };
 /* End PBXBuildFile section */
@@ -410,15 +410,15 @@
 		F59021551627EB6200366A33 /* ScramblingCoco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScramblingCoco.mm; sourceTree = "<group>"; };
 		F59021581628229600366A33 /* GameConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameConfig.m; sourceTree = "<group>"; };
 		F5AD3167162AF00700744572 /* Francois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Francois.h; sourceTree = "<group>"; };
-		F5AD3168162AF00700744572 /* Francois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Francois.m; sourceTree = "<group>"; };
+		F5AD3168162AF00700744572 /* Francois.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Francois.mm; sourceTree = "<group>"; };
 		F5AD316A162AF02100744572 /* RunningFrancois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningFrancois.h; sourceTree = "<group>"; };
-		F5AD316B162AF02100744572 /* RunningFrancois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningFrancois.m; sourceTree = "<group>"; };
+		F5AD316B162AF02100744572 /* RunningFrancois.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RunningFrancois.mm; sourceTree = "<group>"; };
 		F5AD316D162AF04500744572 /* SwimmingFrancois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimmingFrancois.h; sourceTree = "<group>"; };
-		F5AD316E162AF04500744572 /* SwimmingFrancois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwimmingFrancois.m; sourceTree = "<group>"; };
+		F5AD316E162AF04500744572 /* SwimmingFrancois.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SwimmingFrancois.mm; sourceTree = "<group>"; };
 		F5AD3170162AF05800744572 /* ScramblingFrancois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScramblingFrancois.h; sourceTree = "<group>"; };
-		F5AD3171162AF05800744572 /* ScramblingFrancois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScramblingFrancois.m; sourceTree = "<group>"; };
+		F5AD3171162AF05800744572 /* ScramblingFrancois.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScramblingFrancois.mm; sourceTree = "<group>"; };
 		F5AD3173162AF06B00744572 /* GoingDownFrancois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoingDownFrancois.h; sourceTree = "<group>"; };
-		F5AD3174162AF06B00744572 /* GoingDownFrancois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoingDownFrancois.m; sourceTree = "<group>"; };
+		F5AD3174162AF06B00744572 /* GoingDownFrancois.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GoingDownFrancois.mm; sourceTree = "<group>"; };
 		F5F0A2EF1629609000D11774 /* GoingDownCoco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoingDownCoco.h; sourceTree = "<group>"; };
 		F5F0A2F01629609000D11774 /* GoingDownCoco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GoingDownCoco.mm; sourceTree = "<group>"; };
 		F5F0A2F316297ACF00D11774 /* GUILayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUILayer.h; sourceTree = "<group>"; };
@@ -879,15 +879,15 @@
 			isa = PBXGroup;
 			children = (
 				F5AD3167162AF00700744572 /* Francois.h */,
-				F5AD3168162AF00700744572 /* Francois.m */,
+				F5AD3168162AF00700744572 /* Francois.mm */,
 				F5AD316A162AF02100744572 /* RunningFrancois.h */,
-				F5AD316B162AF02100744572 /* RunningFrancois.m */,
+				F5AD316B162AF02100744572 /* RunningFrancois.mm */,
 				F5AD316D162AF04500744572 /* SwimmingFrancois.h */,
-				F5AD316E162AF04500744572 /* SwimmingFrancois.m */,
+				F5AD316E162AF04500744572 /* SwimmingFrancois.mm */,
 				F5AD3170162AF05800744572 /* ScramblingFrancois.h */,
-				F5AD3171162AF05800744572 /* ScramblingFrancois.m */,
+				F5AD3171162AF05800744572 /* ScramblingFrancois.mm */,
 				F5AD3173162AF06B00744572 /* GoingDownFrancois.h */,
-				F5AD3174162AF06B00744572 /* GoingDownFrancois.m */,
+				F5AD3174162AF06B00744572 /* GoingDownFrancois.mm */,
 			);
 			name = FrancoisClasses;
 			sourceTree = "<group>";
@@ -1078,11 +1078,11 @@
 				F59021591628229600366A33 /* GameConfig.m in Sources */,
 				F5F0A2F11629609000D11774 /* GoingDownCoco.mm in Sources */,
 				F5F0A2F516297ACF00D11774 /* GUILayer.mm in Sources */,
-				F5AD3169162AF00700744572 /* Francois.m in Sources */,
-				F5AD316C162AF02100744572 /* RunningFrancois.m in Sources */,
-				F5AD316F162AF04500744572 /* SwimmingFrancois.m in Sources */,
-				F5AD3172162AF05800744572 /* ScramblingFrancois.m in Sources */,
-				F5AD3175162AF06B00744572 /* GoingDownFrancois.m in Sources */,
+				F5AD3169162AF00700744572 /* Francois.mm in Sources */,
+				F5AD316C162AF02100744572 /* RunningFrancois.mm in Sources */,
+				F5AD316F162AF04500744572 /* SwimmingFrancois.mm in Sources */,
+				F5AD3172162AF05800744572 /* ScramblingFrancois.mm in Sources */,
+				F5AD3175162AF06B00744572 /* GoingDownFrancois.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1101,7 +1101,7 @@
 					"COCOS2D_DEBUG=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
@@ -1116,7 +1116,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;

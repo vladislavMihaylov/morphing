@@ -11,12 +11,6 @@
 
 @implementation ScramblingCoco
 
-@synthesize body;
-@synthesize head;
-@synthesize rightFoot;
-@synthesize leftFoot;
-@synthesize rightHand;
-@synthesize leftHand;
 
 - (void) dealloc
 {

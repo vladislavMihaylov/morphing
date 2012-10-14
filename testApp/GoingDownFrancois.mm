@@ -1,15 +1,15 @@
 //
-//  JumpingCoco.m
+//  GoingDownFrancois.m
 //  morphing
 //
-//  Created by Vlad on 12.10.12.
+//  Created by Vlad on 14.10.12.
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "GoingDownCoco.h"
+#import "GoingDownFrancois.h"
 
 
-@implementation GoingDownCoco
+@implementation GoingDownFrancois
 
 - (void) dealloc
 {
@@ -115,13 +115,12 @@
     
 }
 
-+ (GoingDownCoco *) createWithSpeed: (float) speed
++ (GoingDownFrancois *) createWithSpeed: (float) speed
 {
-    GoingDownCoco *goingDownCoco = [[[GoingDownCoco alloc] initWithSpeed: speed] autorelease];
+    GoingDownFrancois *goingDownFrancois = [[[GoingDownFrancois alloc] initWithSpeed: speed] autorelease];
     
-    return goingDownCoco;
+    return goingDownFrancois;
 }
-
 
 
 @end

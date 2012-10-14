@@ -28,11 +28,4 @@
 - (void) increaseSpeed;
 - (float) getCurrentCocoSpeed;
 
-@property (nonatomic, assign) AnimationNode *body;
-@property (nonatomic, assign) AnimationNode *head;
-@property (nonatomic, assign) AnimationNode *rightHand;
-@property (nonatomic, assign) AnimationNode *leftHand;
-@property (nonatomic, assign) AnimationNode *rightFoot;
-@property (nonatomic, assign) AnimationNode *leftFoot;
-
 @end

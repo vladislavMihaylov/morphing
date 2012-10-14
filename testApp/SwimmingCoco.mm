@@ -11,13 +11,6 @@
 
 @implementation SwimmingCoco
 
-@synthesize body;
-@synthesize head;
-@synthesize rightFoot;
-@synthesize leftFoot;
-@synthesize rightHand;
-@synthesize leftHand;
-
 - (void) dealloc
 {
     [super dealloc];

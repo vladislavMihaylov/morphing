@@ -1,15 +1,15 @@
 //
-//  JumpingCoco.m
+//  RunningFrancois.m
 //  morphing
 //
-//  Created by Vlad on 12.10.12.
+//  Created by Vlad on 14.10.12.
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "GoingDownCoco.h"
+#import "RunningFrancois.h"
 
 
-@implementation GoingDownCoco
+@implementation RunningFrancois
 
 - (void) dealloc
 {
@@ -43,7 +43,7 @@
         [body addFrame: AFrame(0, 0)];
         [body addFrame: AFrame(1, 3)];
         [body addFrame: AFrame(2, 0)];
-        [body addFrame: AFrame(3, -2)];
+        [body addFrame: AFrame(3, -3)];
         [body addFrame: AFrame(4, 0)];
         
         head = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"head.png"]  position: positionHead anchorPoint: anchorHead andSpeed: speed];
@@ -54,28 +54,32 @@
         [head addFrame: AFrame(4, 0)];
         
         rightHand = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"rightHand.png"]  position: positionRightHand anchorPoint: anchorRightHand andSpeed: speed];
-        [rightHand addFrame: AFrame(0, -75)];
-        [rightHand addFrame: AFrame(1, -90)];
-        [rightHand addFrame: AFrame(2, -105)];
-        [rightHand addFrame: AFrame(3, -90)];
-        [rightHand addFrame: AFrame(4, -75)];
+        [rightHand addFrame: AFrame(0, 0)];
+        [rightHand addFrame: AFrame(1, -65)];
+        [rightHand addFrame: AFrame(2, 0)];
+        [rightHand addFrame: AFrame(3, 10)];
+        [rightHand addFrame: AFrame(4, 0)];
         
         leftHand = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"leftHand.png"]  position: positionLeftHand anchorPoint: anchorLeftHand andSpeed: speed];
-        [leftHand addFrame: AFrame(0, -105)];
-        [leftHand addFrame: AFrame(1, -90)];
-        [leftHand addFrame: AFrame(2, -75)];
-        [leftHand addFrame: AFrame(3, -90)];
-        [leftHand addFrame: AFrame(4, -105)];
+        [leftHand addFrame: AFrame(0, 0)];
+        [leftHand addFrame: AFrame(1, 10)];
+        [leftHand addFrame: AFrame(2, 0)];
+        [leftHand addFrame: AFrame(3, -65)];
+        [leftHand addFrame: AFrame(4, 0)];
         
         rightFoot = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"rightFoot.png"]  position: positionRightFoot anchorPoint: anchorRightFoot andSpeed: speed];
         [rightFoot addFrame: AFrame(0, 0)];
-        [rightFoot addFrame: AFrame(1, -15)];
+        [rightFoot addFrame: AFrame(1, 40)];
         [rightFoot addFrame: AFrame(2, 0)];
+        [rightFoot addFrame: AFrame(3, -65)];
+        [rightFoot addFrame: AFrame(4, 0)];
         
         leftFoot = [AnimationNode createWithSprite: [CCSprite spriteWithFile: @"leftFoot.png"]  position: positionLeftFoot anchorPoint: anchorLeftFoot andSpeed: speed];
-        [leftFoot addFrame: AFrame(0, -15)];
-        [leftFoot addFrame: AFrame(1, 0)];
-        [leftFoot addFrame: AFrame(2, -15)];
+        [leftFoot addFrame: AFrame(0, 0)];
+        [leftFoot addFrame: AFrame(1, -65)];
+        [leftFoot addFrame: AFrame(2, 0)];
+        [leftFoot addFrame: AFrame(3, 40)];
+        [leftFoot addFrame: AFrame(4, 0)];
         
         body.position = positionBody;
         head.position = positionHead;
@@ -91,6 +95,7 @@
         [body addChildToNode: leftHand withZ: -1];
         [body addChildToNode: rightFoot withZ: 1];
         [body addChildToNode: leftFoot withZ: -1];
+        
     }
     
     return self;
@@ -112,16 +117,14 @@
     CCLOG(@"currentSpeed = %f", currentSpeed);
     
     return currentSpeed;
-    
 }
 
-+ (GoingDownCoco *) createWithSpeed: (float) speed
++ (RunningFrancois *) createWithSpeed: (float) speed
 {
-    GoingDownCoco *goingDownCoco = [[[GoingDownCoco alloc] initWithSpeed: speed] autorelease];
+    RunningFrancois *runningFrancois = [[[RunningFrancois alloc] initWithSpeed: speed] autorelease];
     
-    return goingDownCoco;
+    return runningFrancois;
 }
-
 
 
 @end
