@@ -11,7 +11,6 @@
 
 #import "AnimationNode.h"
 
-#import "CurrentCoco.h"
 #import "RunningCoco.h"
 #import "SwimmingCoco.h"
 #import "ScramblingCoco.h"
@@ -19,8 +18,6 @@
 
 @interface Coco : CCNode 
 {
-    CurrentCoco *currentCoco;
-    //Coco *coco;
     RunningCoco *runningCoco;
     SwimmingCoco *swimmingCoco;
     ScramblingCoco *scramblingCoco;

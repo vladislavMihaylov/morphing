@@ -9,6 +9,8 @@
 #import "Ground.h"
 #import "GameConfig.h"
 
+#import "GUILayer.h"
+
 @implementation Ground
 
 - (void) dealloc
@@ -73,10 +75,28 @@
     }
 }
 
+- (NSInteger) getCurrentDistance
+{
+    return distance;
+}
+
 - (void) update: (float) dt
 {
     
     speed -= 1.5 * dt;
+    
+    distance += speed / 5;
+    
+    if(distance > 1000)
+    {
+        //[self showLabelWithDistance: 2000 - distance];
+    }
+    if(distance > 2000)
+    {
+        //leftDistance.string = @"";
+        distance = 0;
+        [self showWater];
+    }
     
     if(speed <= 0)
     {

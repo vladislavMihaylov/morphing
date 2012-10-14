@@ -16,7 +16,6 @@
 		04809B7D1615A9970075B467 /* AnimationNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04809B7C1615A9970075B467 /* AnimationNode.mm */; };
 		04809B851615B3C10075B467 /* Common.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04809B841615B3C10075B467 /* Common.mm */; };
 		0480C85D1618827D00E6ED90 /* Coco.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0480C85C1618827D00E6ED90 /* Coco.mm */; };
-		0480C8641618903600E6ED90 /* CurrentCoco.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0480C8631618903600E6ED90 /* CurrentCoco.mm */; };
 		0480DD091616C4C7005D5A7F /* RunningCoco.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0480DD081616C4C7005D5A7F /* RunningCoco.mm */; };
 		0480DD0C1616CB90005D5A7F /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = 0480DD0B1616CB90005D5A7F /* head.png */; };
 		048C030816071916009996CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C030716071916009996CB /* QuartzCore.framework */; };
@@ -140,6 +139,11 @@
 		F580D95116250340000C466C /* textureWater.png in Resources */ = {isa = PBXBuildFile; fileRef = F580D95016250340000C466C /* textureWater.png */; };
 		F59021561627EB6200366A33 /* ScramblingCoco.mm in Sources */ = {isa = PBXBuildFile; fileRef = F59021551627EB6200366A33 /* ScramblingCoco.mm */; };
 		F59021591628229600366A33 /* GameConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F59021581628229600366A33 /* GameConfig.m */; };
+		F5AD3169162AF00700744572 /* Francois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3168162AF00700744572 /* Francois.m */; };
+		F5AD316C162AF02100744572 /* RunningFrancois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD316B162AF02100744572 /* RunningFrancois.m */; };
+		F5AD316F162AF04500744572 /* SwimmingFrancois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD316E162AF04500744572 /* SwimmingFrancois.m */; };
+		F5AD3172162AF05800744572 /* ScramblingFrancois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3171162AF05800744572 /* ScramblingFrancois.m */; };
+		F5AD3175162AF06B00744572 /* GoingDownFrancois.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3174162AF06B00744572 /* GoingDownFrancois.m */; };
 		F5F0A2F11629609000D11774 /* GoingDownCoco.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5F0A2F01629609000D11774 /* GoingDownCoco.mm */; };
 		F5F0A2F516297ACF00D11774 /* GUILayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5F0A2F416297ACF00D11774 /* GUILayer.mm */; };
 /* End PBXBuildFile section */
@@ -158,8 +162,6 @@
 		04809B841615B3C10075B467 /* Common.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Common.mm; sourceTree = "<group>"; };
 		0480C85B1618827D00E6ED90 /* Coco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coco.h; sourceTree = "<group>"; };
 		0480C85C1618827D00E6ED90 /* Coco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Coco.mm; sourceTree = "<group>"; };
-		0480C8621618903600E6ED90 /* CurrentCoco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentCoco.h; sourceTree = "<group>"; };
-		0480C8631618903600E6ED90 /* CurrentCoco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CurrentCoco.mm; sourceTree = "<group>"; };
 		0480DD071616C4C7005D5A7F /* RunningCoco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningCoco.h; sourceTree = "<group>"; };
 		0480DD081616C4C7005D5A7F /* RunningCoco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RunningCoco.mm; sourceTree = "<group>"; };
 		0480DD0B1616CB90005D5A7F /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
@@ -407,6 +409,16 @@
 		F59021541627EB6200366A33 /* ScramblingCoco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScramblingCoco.h; sourceTree = "<group>"; };
 		F59021551627EB6200366A33 /* ScramblingCoco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScramblingCoco.mm; sourceTree = "<group>"; };
 		F59021581628229600366A33 /* GameConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameConfig.m; sourceTree = "<group>"; };
+		F5AD3167162AF00700744572 /* Francois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Francois.h; sourceTree = "<group>"; };
+		F5AD3168162AF00700744572 /* Francois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Francois.m; sourceTree = "<group>"; };
+		F5AD316A162AF02100744572 /* RunningFrancois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningFrancois.h; sourceTree = "<group>"; };
+		F5AD316B162AF02100744572 /* RunningFrancois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningFrancois.m; sourceTree = "<group>"; };
+		F5AD316D162AF04500744572 /* SwimmingFrancois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwimmingFrancois.h; sourceTree = "<group>"; };
+		F5AD316E162AF04500744572 /* SwimmingFrancois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwimmingFrancois.m; sourceTree = "<group>"; };
+		F5AD3170162AF05800744572 /* ScramblingFrancois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScramblingFrancois.h; sourceTree = "<group>"; };
+		F5AD3171162AF05800744572 /* ScramblingFrancois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScramblingFrancois.m; sourceTree = "<group>"; };
+		F5AD3173162AF06B00744572 /* GoingDownFrancois.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoingDownFrancois.h; sourceTree = "<group>"; };
+		F5AD3174162AF06B00744572 /* GoingDownFrancois.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoingDownFrancois.m; sourceTree = "<group>"; };
 		F5F0A2EF1629609000D11774 /* GoingDownCoco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoingDownCoco.h; sourceTree = "<group>"; };
 		F5F0A2F01629609000D11774 /* GoingDownCoco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GoingDownCoco.mm; sourceTree = "<group>"; };
 		F5F0A2F316297ACF00D11774 /* GUILayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUILayer.h; sourceTree = "<group>"; };
@@ -450,20 +462,10 @@
 		0480C8591618825B00E6ED90 /* cocoMorphAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				F5AD3166162AEA2E00744572 /* FrancoisClasses */,
+				F5AD3164162AE86000744572 /* CocoClasses */,
 				04809B7B1615A9970075B467 /* AnimationNode.h */,
 				04809B7C1615A9970075B467 /* AnimationNode.mm */,
-				0480DD071616C4C7005D5A7F /* RunningCoco.h */,
-				0480DD081616C4C7005D5A7F /* RunningCoco.mm */,
-				047E81091617F22500235F71 /* SwimmingCoco.h */,
-				047E810A1617F22500235F71 /* SwimmingCoco.mm */,
-				F59021541627EB6200366A33 /* ScramblingCoco.h */,
-				F59021551627EB6200366A33 /* ScramblingCoco.mm */,
-				F5F0A2EF1629609000D11774 /* GoingDownCoco.h */,
-				F5F0A2F01629609000D11774 /* GoingDownCoco.mm */,
-				0480C85B1618827D00E6ED90 /* Coco.h */,
-				0480C85C1618827D00E6ED90 /* Coco.mm */,
-				0480C8621618903600E6ED90 /* CurrentCoco.h */,
-				0480C8631618903600E6ED90 /* CurrentCoco.mm */,
 				F545E7ED16247FEC0055C8F7 /* Ground.h */,
 				F545E7EE16247FEC0055C8F7 /* Ground.m */,
 			);
@@ -856,6 +858,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F5AD3164162AE86000744572 /* CocoClasses */ = {
+			isa = PBXGroup;
+			children = (
+				0480DD071616C4C7005D5A7F /* RunningCoco.h */,
+				0480DD081616C4C7005D5A7F /* RunningCoco.mm */,
+				047E81091617F22500235F71 /* SwimmingCoco.h */,
+				047E810A1617F22500235F71 /* SwimmingCoco.mm */,
+				F59021541627EB6200366A33 /* ScramblingCoco.h */,
+				F59021551627EB6200366A33 /* ScramblingCoco.mm */,
+				F5F0A2EF1629609000D11774 /* GoingDownCoco.h */,
+				F5F0A2F01629609000D11774 /* GoingDownCoco.mm */,
+				0480C85B1618827D00E6ED90 /* Coco.h */,
+				0480C85C1618827D00E6ED90 /* Coco.mm */,
+			);
+			name = CocoClasses;
+			sourceTree = "<group>";
+		};
+		F5AD3166162AEA2E00744572 /* FrancoisClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F5AD3167162AF00700744572 /* Francois.h */,
+				F5AD3168162AF00700744572 /* Francois.m */,
+				F5AD316A162AF02100744572 /* RunningFrancois.h */,
+				F5AD316B162AF02100744572 /* RunningFrancois.m */,
+				F5AD316D162AF04500744572 /* SwimmingFrancois.h */,
+				F5AD316E162AF04500744572 /* SwimmingFrancois.m */,
+				F5AD3170162AF05800744572 /* ScramblingFrancois.h */,
+				F5AD3171162AF05800744572 /* ScramblingFrancois.m */,
+				F5AD3173162AF06B00744572 /* GoingDownFrancois.h */,
+				F5AD3174162AF06B00744572 /* GoingDownFrancois.m */,
+			);
+			name = FrancoisClasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1036,13 +1072,17 @@
 				0480DD091616C4C7005D5A7F /* RunningCoco.mm in Sources */,
 				047E810B1617F22500235F71 /* SwimmingCoco.mm in Sources */,
 				0480C85D1618827D00E6ED90 /* Coco.mm in Sources */,
-				0480C8641618903600E6ED90 /* CurrentCoco.mm in Sources */,
 				F545E64516246C000055C8F7 /* GameLayer.mm in Sources */,
 				F545E7EF16247FEC0055C8F7 /* Ground.m in Sources */,
 				F59021561627EB6200366A33 /* ScramblingCoco.mm in Sources */,
 				F59021591628229600366A33 /* GameConfig.m in Sources */,
 				F5F0A2F11629609000D11774 /* GoingDownCoco.mm in Sources */,
 				F5F0A2F516297ACF00D11774 /* GUILayer.mm in Sources */,
+				F5AD3169162AF00700744572 /* Francois.m in Sources */,
+				F5AD316C162AF02100744572 /* RunningFrancois.m in Sources */,
+				F5AD316F162AF04500744572 /* SwimmingFrancois.m in Sources */,
+				F5AD3172162AF05800744572 /* ScramblingFrancois.m in Sources */,
+				F5AD3175162AF06B00744572 /* GoingDownFrancois.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

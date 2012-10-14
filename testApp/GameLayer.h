@@ -16,22 +16,20 @@
 
 @interface GameLayer: CCNode
 {
-    GUILayer *guiLayer;
+    GUILayer *gui;
     
     Ground *ground;
     Coco *coco;
     
     float currentSpeed;
     NSInteger currentGround;
-    
-    float distance;
-    
+        
     CCLabelTTF *leftDistance;
 }
 
 + (CCScene *) scene;
 
-- (void) showLabelWithDistance: (NSInteger) distance;
+- (void) doAction: (NSInteger) numberOfAction;
 
 @property (nonatomic, assign) GUILayer *guiLayer;
 

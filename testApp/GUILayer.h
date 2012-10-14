@@ -15,7 +15,11 @@
 {
     GameLayer *gameLayer;
     
+    CCLabelTTF *remainingDistance;
+    
 }
+
+- (void) updateDistanceLabel: (NSInteger) distance;
 
 @property (nonatomic, assign) GameLayer *gameLayer;
 

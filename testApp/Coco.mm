@@ -28,8 +28,6 @@
 {
     if(self = [super init])
     {
-        currentCoco = [CurrentCoco createWithSpeed: 0];
-
         swimmingCoco = [SwimmingCoco createWithSpeed: 0];
         runningCoco = [RunningCoco createWithSpeed: 0];
         scramblingCoco = [ScramblingCoco createWithSpeed: 0];

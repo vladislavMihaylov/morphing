@@ -22,13 +22,15 @@
     float speed;                    // Скорость анимации
         
     NSInteger currentGroundType;
-    
+        
+    float distance;
+
 }
 
 + (Ground *) create;
 
 - (void) increaseSpeedAnimation: (float) speed;
-
+- (NSInteger) getCurrentDistance;
 - (void) showWater;
 
 @end
