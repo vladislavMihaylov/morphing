@@ -110,7 +110,7 @@
 - (float) getCurrentCocoSpeed
 {
     currentSpeed = [body getCurrentSpeed];
-    CCLOG(@"currentSpeed = %f", currentSpeed);
+    //CCLOG(@"currentSpeed = %f", currentSpeed);
     
     return currentSpeed;
     

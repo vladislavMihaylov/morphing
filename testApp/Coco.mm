@@ -80,7 +80,8 @@
         if(currentAction == kRunningAction)
         {
             ICanJump = NO;
-            
+            currentGroundSpeed = 5;//[runningCoco getCurrentCocoSpeed];
+            [runningCoco setSpeed: currentGroundSpeed];
             [self runAction: [CCJumpTo actionWithDuration: 0.7 position: self.position height: 50 jumps: 1]];
             [self runAction:
                     [CCSequence actions:
@@ -141,6 +142,17 @@
     [rightFoot increaseSpeedAnimation];
     [leftFoot increaseSpeedAnimation];
 }
+
+- (void) stopCoco
+{
+    [body setSpeed: 0];
+    [head setSpeed: 0];
+    [rightHand setSpeed: 0];
+    [leftHand setSpeed: 0];
+    [rightFoot setSpeed: 0];
+    [leftFoot setSpeed: 0];
+}
+
 
 + (Coco *) createWithSpeed: (float) speed
 {

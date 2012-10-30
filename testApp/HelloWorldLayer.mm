@@ -11,8 +11,9 @@
 #import "HelloWorldLayer.h"
 #import "Common.h"
 #import "GameLayer.h"
-#import "Coco.h"
+//#import "Coco.h"
 
+#import "GameConfig.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -41,18 +42,28 @@
 {
 	if( (self=[super init])) {
 		
-		CCMenuItemFont *play = [CCMenuItemFont itemFromString: @"PLAY" target: self selector: @selector(play:)];
-        play.position = ccp(160, 160);
+		CCMenuItemFont *playCoco = [CCMenuItemFont itemFromString: @"PLAY WITH COCO"
+                                                           target: self
+                                                         selector: @selector(play:)];
+        playCoco.position = ccp(240, 160);
+        playCoco.tag = 0;
         
-        CCMenu *menu = [CCMenu menuWithItems: play, nil];
+        CCMenuItemFont *playFrancois = [CCMenuItemFont itemFromString: @"PLAY WITH FRANCOIS"
+                                                               target: self
+                                                             selector: @selector(play:)];
+        playFrancois.position = ccp(240, 100);
+        playFrancois.tag = 1;
+        
+        CCMenu *menu = [CCMenu menuWithItems: playCoco, playFrancois, nil];
         menu.position = ccp(0,0);
         [self addChild: menu];
 	}
 	return self;
 }
 
-- (void) play: (id) sender
+- (void) play: (CCMenuItemFont *) sender
 {
+    typeCharacter = sender.tag;
     [[CCDirector sharedDirector] replaceScene: [CCTransitionFade transitionWithDuration: 1 scene: [GameLayer scene]]];
 }
 

@@ -19,6 +19,7 @@
 
 + (RunningCoco *) createWithSpeed: (float) speed;
 - (void) increaseSpeed;
+- (void) setSpeed: (float) speedParam;
 - (float) getCurrentCocoSpeed;
 
 @end

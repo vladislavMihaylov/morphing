@@ -15,8 +15,6 @@
 {
     AnimationNode *body;
     AnimationNode *head;
-    AnimationNode *rightHand;
-    AnimationNode *leftHand;
     AnimationNode *rightFoot;
     AnimationNode *leftFoot;
     

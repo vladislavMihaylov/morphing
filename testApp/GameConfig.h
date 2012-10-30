@@ -44,17 +44,35 @@
 #define kSwimmingCocoTag      10
 #define kRunningCocoTag       11
 
+#define kFirstSpriteTag       50
+
 #define kRunningAction        100
 #define kSwimmingAction       101
 #define kScramblingAction     102
 #define kGoingDownAction      103
 
-#define kIsGround             201
-#define kIsWater              202
-#define kIsScrambleMountain   203
-#define kIsGoDownMountain     204
+#define kIsGround             1000
+#define kIsWater              1001
+#define kIsJump               1002
+#define kIsGoUpMountain       1003
+#define kIsRunOnMountain      1004
+#define kIsGoDownMountain     1005
+#define kIsFinishRun          1006
 
+#define kIsHorizontalMove     2000
+#define kIsUpMove             2001
+#define kIsDownMove           2002
+
+
+extern NSInteger typeCharacter;
 extern BOOL ICanJump;
+extern BOOL IsMoveRight;
+extern BOOL IsMoveUp;
+extern BOOL IsMoveDown;
+extern BOOL ItsNewGround;
+
+extern BOOL INeedNextAction;
+extern BOOL IsGameActive;
 
 #endif // __GAME_CONFIG_H
 

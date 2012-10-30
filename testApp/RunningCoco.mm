@@ -103,6 +103,17 @@
     return self;
 }
 
+- (void) setSpeed: (float) speedParam
+{
+    [body setSpeedOfAnimation: speedParam];
+    [head setSpeedOfAnimation: speedParam];
+    [rightHand setSpeedOfAnimation: speedParam];
+    [leftHand setSpeedOfAnimation: speedParam];
+    [rightFoot setSpeedOfAnimation: speedParam];
+    [leftFoot setSpeedOfAnimation: speedParam];
+
+}
+
 - (void) increaseSpeed
 {
     [body increaseSpeedAnimation];
@@ -116,7 +127,7 @@
 - (float) getCurrentCocoSpeed
 {
     currentSpeed = [body getCurrentSpeed];
-    CCLOG(@"currentSpeed = %f", currentSpeed);
+    //CCLOG(@"currentSpeed = %f", currentSpeed);
     
     return currentSpeed;
 }

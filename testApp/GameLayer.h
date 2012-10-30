@@ -11,6 +11,7 @@
 
 #import "Ground.h"
 #import "Coco.h"
+#import "Francois.h"
 
 #import "GUILayer.h"
 
@@ -20,14 +21,18 @@
     
     Ground *ground;
     Coco *coco;
+    Francois *francois;
     
     float currentSpeed;
     NSInteger currentGround;
+    NSInteger curAction;
         
     CCLabelTTF *leftDistance;
 }
 
 + (CCScene *) scene;
+
+- (void) restartGame;
 
 - (void) doAction: (NSInteger) numberOfAction;
 

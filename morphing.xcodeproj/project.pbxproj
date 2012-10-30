@@ -133,10 +133,21 @@
 		048C046B1607191B009996CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C046A1607191B009996CB /* AppDelegate.m */; };
 		048C046E1607191B009996CB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C046D1607191B009996CB /* RootViewController.m */; };
 		048C04711607191B009996CB /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 048C04701607191B009996CB /* HelloWorldLayer.mm */; };
-		F545E64116246B910055C8F7 /* textureEarth.png in Resources */ = {isa = PBXBuildFile; fileRef = F545E64016246B910055C8F7 /* textureEarth.png */; };
+		F508498C16396D5800D938BE /* texture1000.png in Resources */ = {isa = PBXBuildFile; fileRef = F508498616396D5800D938BE /* texture1000.png */; };
+		F508498D16396D5800D938BE /* texture1001.png in Resources */ = {isa = PBXBuildFile; fileRef = F508498716396D5800D938BE /* texture1001.png */; };
+		F508498E16396D5800D938BE /* texture1002.png in Resources */ = {isa = PBXBuildFile; fileRef = F508498816396D5800D938BE /* texture1002.png */; };
+		F508498F16396D5800D938BE /* texture1003.png in Resources */ = {isa = PBXBuildFile; fileRef = F508498916396D5800D938BE /* texture1003.png */; };
+		F508499116396D5800D938BE /* texture1005.png in Resources */ = {isa = PBXBuildFile; fileRef = F508498B16396D5800D938BE /* texture1005.png */; };
+		F50849931639B1DD00D938BE /* texture1004.png in Resources */ = {isa = PBXBuildFile; fileRef = F50849921639B1DD00D938BE /* texture1004.png */; };
+		F50E698C163A4B24001CB66D /* texture1006.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E698B163A4B24001CB66D /* texture1006.png */; };
+		F50E698F163ABA9D001CB66D /* texture1007.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E698E163ABA9D001CB66D /* texture1007.png */; };
+		F50E6995163ACD47001CB66D /* exitBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E6990163ACD47001CB66D /* exitBtn.png */; };
+		F50E6996163ACD47001CB66D /* menuBg.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E6991163ACD47001CB66D /* menuBg.png */; };
+		F50E6997163ACD47001CB66D /* pauseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E6992163ACD47001CB66D /* pauseBtn.png */; };
+		F50E6998163ACD47001CB66D /* playBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E6993163ACD47001CB66D /* playBtn.png */; };
+		F50E6999163ACD47001CB66D /* restartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E6994163ACD47001CB66D /* restartBtn.png */; };
 		F545E64516246C000055C8F7 /* GameLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F545E64416246BFF0055C8F7 /* GameLayer.mm */; };
 		F545E7EF16247FEC0055C8F7 /* Ground.m in Sources */ = {isa = PBXBuildFile; fileRef = F545E7EE16247FEC0055C8F7 /* Ground.m */; };
-		F580D95116250340000C466C /* textureWater.png in Resources */ = {isa = PBXBuildFile; fileRef = F580D95016250340000C466C /* textureWater.png */; };
 		F59021561627EB6200366A33 /* ScramblingCoco.mm in Sources */ = {isa = PBXBuildFile; fileRef = F59021551627EB6200366A33 /* ScramblingCoco.mm */; };
 		F59021591628229600366A33 /* GameConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F59021581628229600366A33 /* GameConfig.m */; };
 		F5AD3169162AF00700744572 /* Francois.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5AD3168162AF00700744572 /* Francois.mm */; };
@@ -400,12 +411,23 @@
 		048C046F1607191B009996CB /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		048C04701607191B009996CB /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		048C04721607191B009996CB /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
-		F545E64016246B910055C8F7 /* textureEarth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textureEarth.png; sourceTree = "<group>"; };
+		F508498616396D5800D938BE /* texture1000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1000.png; sourceTree = "<group>"; };
+		F508498716396D5800D938BE /* texture1001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1001.png; sourceTree = "<group>"; };
+		F508498816396D5800D938BE /* texture1002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1002.png; sourceTree = "<group>"; };
+		F508498916396D5800D938BE /* texture1003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1003.png; sourceTree = "<group>"; };
+		F508498B16396D5800D938BE /* texture1005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1005.png; sourceTree = "<group>"; };
+		F50849921639B1DD00D938BE /* texture1004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1004.png; sourceTree = "<group>"; };
+		F50E698B163A4B24001CB66D /* texture1006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1006.png; sourceTree = "<group>"; };
+		F50E698E163ABA9D001CB66D /* texture1007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1007.png; sourceTree = "<group>"; };
+		F50E6990163ACD47001CB66D /* exitBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exitBtn.png; sourceTree = "<group>"; };
+		F50E6991163ACD47001CB66D /* menuBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBg.png; sourceTree = "<group>"; };
+		F50E6992163ACD47001CB66D /* pauseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseBtn.png; sourceTree = "<group>"; };
+		F50E6993163ACD47001CB66D /* playBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playBtn.png; sourceTree = "<group>"; };
+		F50E6994163ACD47001CB66D /* restartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restartBtn.png; sourceTree = "<group>"; };
 		F545E64316246BFF0055C8F7 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		F545E64416246BFF0055C8F7 /* GameLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameLayer.mm; sourceTree = "<group>"; };
 		F545E7ED16247FEC0055C8F7 /* Ground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ground.h; sourceTree = "<group>"; };
 		F545E7EE16247FEC0055C8F7 /* Ground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ground.m; sourceTree = "<group>"; };
-		F580D95016250340000C466C /* textureWater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textureWater.png; sourceTree = "<group>"; };
 		F59021541627EB6200366A33 /* ScramblingCoco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScramblingCoco.h; sourceTree = "<group>"; };
 		F59021551627EB6200366A33 /* ScramblingCoco.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScramblingCoco.mm; sourceTree = "<group>"; };
 		F59021581628229600366A33 /* GameConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameConfig.m; sourceTree = "<group>"; };
@@ -447,8 +469,19 @@
 		047F8B2D1612E98100241C12 /* CocoSprites */ = {
 			isa = PBXGroup;
 			children = (
-				F580D95016250340000C466C /* textureWater.png */,
-				F545E64016246B910055C8F7 /* textureEarth.png */,
+				F50E6990163ACD47001CB66D /* exitBtn.png */,
+				F50E6991163ACD47001CB66D /* menuBg.png */,
+				F50E6992163ACD47001CB66D /* pauseBtn.png */,
+				F50E6993163ACD47001CB66D /* playBtn.png */,
+				F50E6994163ACD47001CB66D /* restartBtn.png */,
+				F508498616396D5800D938BE /* texture1000.png */,
+				F508498716396D5800D938BE /* texture1001.png */,
+				F508498816396D5800D938BE /* texture1002.png */,
+				F508498916396D5800D938BE /* texture1003.png */,
+				F50849921639B1DD00D938BE /* texture1004.png */,
+				F508498B16396D5800D938BE /* texture1005.png */,
+				F50E698B163A4B24001CB66D /* texture1006.png */,
+				F50E698E163ABA9D001CB66D /* texture1007.png */,
 				0480DD0B1616CB90005D5A7F /* head.png */,
 				047F8B2E1612EA1000241C12 /* body.png */,
 				047F8B301612EA1000241C12 /* leftFoot.png */,
@@ -957,8 +990,19 @@
 				047F8B381612EA1000241C12 /* rightFoot.png in Resources */,
 				047F8B391612EA1000241C12 /* rightHand.png in Resources */,
 				0480DD0C1616CB90005D5A7F /* head.png in Resources */,
-				F545E64116246B910055C8F7 /* textureEarth.png in Resources */,
-				F580D95116250340000C466C /* textureWater.png in Resources */,
+				F508498C16396D5800D938BE /* texture1000.png in Resources */,
+				F508498D16396D5800D938BE /* texture1001.png in Resources */,
+				F508498E16396D5800D938BE /* texture1002.png in Resources */,
+				F508498F16396D5800D938BE /* texture1003.png in Resources */,
+				F508499116396D5800D938BE /* texture1005.png in Resources */,
+				F50849931639B1DD00D938BE /* texture1004.png in Resources */,
+				F50E698C163A4B24001CB66D /* texture1006.png in Resources */,
+				F50E698F163ABA9D001CB66D /* texture1007.png in Resources */,
+				F50E6995163ACD47001CB66D /* exitBtn.png in Resources */,
+				F50E6996163ACD47001CB66D /* menuBg.png in Resources */,
+				F50E6997163ACD47001CB66D /* pauseBtn.png in Resources */,
+				F50E6998163ACD47001CB66D /* playBtn.png in Resources */,
+				F50E6999163ACD47001CB66D /* restartBtn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1093,7 +1137,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jeffrey McLeod (ZKHCZ235BN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeffrey McLeod (ZKHCZ235BN)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1105,6 +1150,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "BC116D71-D2CF-4DFD-A637-78B546510851";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BC116D71-D2CF-4DFD-A637-78B546510851";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1113,7 +1160,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jeffrey McLeod (ZKHCZ235BN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeffrey McLeod (ZKHCZ235BN)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -1121,6 +1169,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "BC116D71-D2CF-4DFD-A637-78B546510851";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BC116D71-D2CF-4DFD-A637-78B546510851";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -1129,8 +1179,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Judith Krieger (9988HR8NU9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Judith Krieger (9988HR8NU9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jeffrey McLeod (ZKHCZ235BN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeffrey McLeod (ZKHCZ235BN)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1139,8 +1189,8 @@
 				INFOPLIST_FILE = testApp/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = morphing;
-				PROVISIONING_PROFILE = "3D702F02-2BE4-4924-B8D2-29351F42AD07";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3D702F02-2BE4-4924-B8D2-29351F42AD07";
+				PROVISIONING_PROFILE = "BC116D71-D2CF-4DFD-A637-78B546510851";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BC116D71-D2CF-4DFD-A637-78B546510851";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1149,8 +1199,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Judith Krieger (9988HR8NU9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Judith Krieger (9988HR8NU9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jeffrey McLeod (ZKHCZ235BN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = testApp/Prefix.pch;
@@ -1158,8 +1208,7 @@
 				INFOPLIST_FILE = testApp/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = morphing;
-				PROVISIONING_PROFILE = "3D702F02-2BE4-4924-B8D2-29351F42AD07";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3D702F02-2BE4-4924-B8D2-29351F42AD07";
+				PROVISIONING_PROFILE = "BC116D71-D2CF-4DFD-A637-78B546510851";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

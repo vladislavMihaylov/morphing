@@ -17,6 +17,9 @@
     
     CCLabelTTF *remainingDistance;
     
+    CCSprite *menuBg;
+    
+    CCLayerColor *pauseLayer;
 }
 
 - (void) updateDistanceLabel: (NSInteger) distance;

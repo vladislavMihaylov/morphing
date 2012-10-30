@@ -22,6 +22,7 @@
 - (void) addFrame: (AnimationFrame) frame;
 - (void) addChildToNode: (AnimationNode *) child withZ: (NSInteger) z;
 - (void) increaseSpeedAnimation;
+- (void) setSpeedOfAnimation: (float) speedParam;
 - (void) showVector;
 - (float) getCurrentSpeed;
 

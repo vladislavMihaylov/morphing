@@ -38,6 +38,7 @@
 
 - (void) doAction: (NSInteger) numberOfAction withSpeed: (float) speed;
 - (float) getCurrentGroundSpeed;
+- (void) stopCoco;
 
 
 @end

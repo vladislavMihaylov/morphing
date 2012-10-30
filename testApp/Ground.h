@@ -13,24 +13,41 @@
 {
     
     CCSprite *ground;
+    CCSprite *firstSpriteOfGround;
     
     NSMutableArray *groundsArray;
+    NSMutableArray *groundsToRemove;
     
-    float time;                     // Счетчик времени
-    NSInteger nextFrameNumber;      // Номер следующего кадра
+    NSInteger currentAction;
+    NSInteger borderForSprite;
+    NSInteger direction;
     
-    float speed;                    // Скорость анимации
+    float time;                         // Счетчик времени
+    NSInteger nextFrameNumber;          // Номер следующего кадра
+    
+    float speed;                        // Скорость анимации
         
     NSInteger currentGroundType;
+    NSInteger globalCount;
         
     float distance;
 
+    BOOL isCanAddGroundTexture;
+    BOOL isTransferGround;
+    
+    CGPoint placeForNewSprite;
+    
+    NSInteger yPositionForSprites;
+    NSInteger xPositionForSprites;
 }
 
 + (Ground *) create;
 
+- (void) restart;
+
 - (void) increaseSpeedAnimation: (float) speed;
 - (NSInteger) getCurrentDistance;
-- (void) showWater;
+- (NSInteger) getCurrentActionNumber;
+- (void) showNewGround: (NSInteger) groundType;
 
 @end
